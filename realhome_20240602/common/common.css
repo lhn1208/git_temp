@@ -1,0 +1,16 @@
+/*header*/
+.header{position: fixed; top:0; left:0; right: 0; height: var(--header-h); display: flex; justify-content: flex-end; align-items: center; gap:40px; padding: 0 35px; border-bottom: 1px solid var(--c-gray); background: #fff; z-index: 900;}
+.header.fixed{box-shadow: 0 6px 10px -5px #d6d6d6;}
+.header ul{display: flex;}
+.header .nav ul{gap:40px;}
+.header .nav ul li a{ font-size: var(--font-mid);}
+.header .nav ul li a:hover,.header .nav ul li a.on{color:var(--c-blue); font-weight: 500;}
+.header .manage{display: inline-block; line-height: 28px; padding:0 14px; border-radius: 50px; background: var(--c-blue); color: #fff; font-size: 13px; font-weight: 500;}
+.header .member li{position: relative;}
+.header .member li a{color: var(--c-bold-gray);}
+.header .member li:last-child{padding-left: 18px;}
+.header .member li:last-child::before{content: ""; position: absolute; top:50%; left: 8px; transform: translateY(-50%); width: 1px; height: 1px; border-radius: 50%; background-color: var(--c-bold-gray);}
+/*content*/
+.intro_box .box .tit{font-weight: 500; font-size: var(--font-mid-tit);}
+.intro_box .box .text{margin-top: 14px; line-height: 1.6; color: var(--c-bold-gray);}
+.intro_box .box button{right: 20px;}
