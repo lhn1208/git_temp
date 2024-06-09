@@ -1,6 +1,0 @@
-
-/*나의 매수,매도*/
-.trad_controls{display: flex; justify-content: space-between; border-bottom: 1px solid var(--c-gray);}
-.trad_controls .trad_btn button{width: 180px; height: 60px; font-size: var(--font-cont-tit); border:1px solid var(--c-gray); border-left: none; border-bottom: none; color: var(--c-bold-gray);}
-.trad_controls .trad_btn button.on{color: var(--c-red); font-weight: 500;}
-.trad_controls .trad_btn button:first-of-type{border-left:1px solid var(--c-gray);}
