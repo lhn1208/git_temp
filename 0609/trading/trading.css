@@ -1,0 +1,21 @@
+
+/*나의 매수,매도*/
+.trad_controls{display: flex; justify-content: space-between;}
+.box_wrap .box.trading_box{--line-h:22px; --ico-font:13px; margin:18px 0; padding:20px 35px; color: var(--c-bold-gray);}
+.box_wrap .box.trading_box .title{ display: inline-block; margin-bottom: 20px; font-size: 18px; color: #000;}
+.box_wrap .box.trading_box .list{display: flex; gap:4px; margin-top: 16px;}
+.box_wrap .box.trading_box .list li::before{content: "/"; margin-right:2px}
+.box_wrap .box.trading_box .list li:first-child::before{display: none;}
+.box_wrap .box.trading_box .rd_ico{margin-left: 4px;}
+.request{padding-top: 0 !important;}
+.request .left_container{padding-top: 60px;}
+
+.offer_agent{display: flex; justify-content: space-between; padding: 10px 16px; font-size: var(--font-cont-txt); color: var(--c-mid-gray);}
+.offer_agent .name{display: block; margin-bottom: 10px; color: #000; font-size: var(--font-mid-tit); font-weight: 500;}
+.offer_agent .col li{margin-bottom: 10px;}
+
+/*평가 table*/
+.rating_tb table thead .flex{gap:16px;}
+.rating_tb table td{padding:20px; padding-right: 10px;}
+.rating_tb table tbody .flex{gap:30px}
+.star_rating_ul li{display: flex;}
