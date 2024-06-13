@@ -1,3 +1,0 @@
-.agent_intro_box{display: flex; align-items: center; gap: 30px; margin-bottom: 40px;}
-.agent_intro_box li{line-height: 2.4; font-size: var(--font-mid);}
-.agent_intro_box em{display: inline-block; width: 75px; margin-right: 10px; color: var(--c-light-gray); text-align: right;}
