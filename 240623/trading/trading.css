@@ -1,0 +1,61 @@
+
+/*나의 매수,매도*/
+.box_wrap .box.trading_box{--line-h:22px; --ico-font:13px; margin:18px 0; padding:20px 35px; color: var(--c-bold-gray);}
+.box_wrap .box.trading_box .title{ display: inline-block; margin-bottom: 20px; font-size: 18px; color: #000;}
+.box_wrap .box.trading_box .info_list{display: flex; gap:4px; margin-top: 16px;}
+.box_wrap .box.trading_box .info_list li::before{content: "/"; margin-right:2px}
+.box_wrap .box.trading_box .info_list li:first-child::before{display: none;}
+.box_wrap .box.trading_box .rd_ico{margin-left: 4px;}
+.request{padding-top: 0 !important;}
+.request .left_container{padding-top: 60px;}
+
+.offer_agent{display: flex; justify-content: space-between; padding: 10px 16px; font-size: var(--font-cont-txt); color: var(--c-mid-gray);}
+.offer_agent .name{display: block; margin-bottom: 10px; color: #000; font-size: var(--font-mid-tit); font-weight: 500;}
+.offer_agent .col li{margin-bottom: 10px;}
+
+.table_style.info .list li{color: #000;}
+.table_style.info .txt_box{margin:40px 0; color: #000; font-weight: 300;}
+.table_style.info .txt_box:last-of-type{margin:20px 0;}
+.table_style.info p{line-height: 1.4;} 
+.table_style.info hr{border-top:1px dashed #000}
+/*평가 table*/
+.rating_tb table thead .flex{gap:16px;}
+.rating_tb table td{padding:20px; padding-right: 10px;}
+.rating_tb table tbody .flex{gap:30px}
+.star_rating_ul li{display: flex;}
+
+.request .addr_input{width:440px;}
+.request .table_style{margin-bottom: 40px;}
+.request .table_style .val_list{display: flex; align-items: center; gap: 30px;}
+.request .table_style .val_list em{margin-left: 4px;}
+
+/*매물관리step*/
+.trade_step{border: 1px solid var(--c-gray); padding: 50px 140px; font-size: var(--font-cont-tit);}
+.trade_step li{position: relative; padding-bottom: 80px;}
+.trade_step li.open{ padding-bottom: 20px;}
+.trade_step li::before{content:""; position: absolute; top:48px; left: 20px; width: 6px; height: calc(100% - 52px); background-color: var(--c-gray); z-index: -1;}
+.trade_step li:last-child::before{display: none;}
+.trade_step li .top{display: flex; justify-content: space-between;}
+.trade_step li .sep_btn{ font-size: var(--font-cont-tit); color: var(--c-red);}
+.trade_step li .sep_btn .link_arr{margin-top: 0; border-right-color: var(--c-red); border-bottom-color: var(--c-red);}
+.trade_step li.open .sep_btn{color: var(--c-blue);}
+.trade_step li.open .link_arr{margin-top: -15px; margin-left: 8px; border-right-color: var(--c-blue); border-bottom-color: var(--c-blue);}
+.trade_step li .text{margin-left: 6px;}
+.trade_step .round{display: inline-block; width: 46px; height: 46px; line-height: 44px; text-align: center; color: #fff; font-size: 22px; background-color: var(--c-orange); border-radius: 50px;}
+.trade_step .round.gray{background-color: var(--c-light-gray);}
+.trade_step .round.blue{background-color: var(--c-blue);}
+.trade_step .round.emerald{background-color: var(--c-emerald);}
+.trade_step .round.red{background-color: var(--c-light-red);}
+.trade_step .f_gray{color: var(--c-light-gray);}
+.trade_step .txt{margin-left: 54px; font-size:  var(--font-mid); color: var(--c-bold-gray);}
+.trade_step .right>span{display: block; }
+.trade_step .right .state{margin-bottom: 6px;}
+.trade_step .right .req_num{font-size: var(--font-mid);}
+.request .table td{position: relative;}
+.tab1 .trade_step .table{margin-bottom: 0; padding-top:20px; margin-left: 52px;}
+.tab1 .trade_step .table th{text-align: center;}
+.tab1 .trade_step .table :is(th,td){font-size: var(--font-mid);}
+.tab1 .trade_step .table .btn_area{position: absolute; top: 50%; right: 20px; transform: translateY(-50%);}
+.tab1 .trade_step .table .btn_area button{margin:0 4px;}
+.tab2 .table .rd_ico{width: 40px; text-align: center;}
+.tab2 .table .ab_right{right: 20px;}
