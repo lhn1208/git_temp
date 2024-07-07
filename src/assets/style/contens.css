@@ -1,5 +1,5 @@
 
-@import '../base.css';
+@import './base.css';
 :root {
   --c-white: #ffffff;
   --c-red:#ff5050;
@@ -33,11 +33,11 @@
 input:focus, button:focus, a:focus, textarea:focus{outline:1px solid var(--c-blue);}
 p{word-break: keep-all;}
 .content_w,.section, .sub_content{width:var(--cont-width); min-width: var(--cont-width); margin: 0 auto;}
-:is(.main,.sub_content) .section{margin-top: 80px;}
+:is(.main,.sub_content) section{margin-top: 80px;}
 .sub_content{margin-top: var(--header-h); padding-top: 50px; padding-bottom: 80px;}
 /* .sub_content.type{padding: 0;} */
 .sub_content.type,.sub_content.type .section{width: auto; min-width: 800px;}
-h2.title{margin: 40px 0; font-size: var(--font-big-tit); font-weight: 500;}
+h2.title{margin: 20px 0; font-size: var(--font-big-tit); font-weight: 500;}
 h3.title{margin-bottom: 30px; font-size: 24px; font-weight: 400;}
 .container_top{margin-top: var(--header-h); height: 60px; box-sizing: border-box; border-bottom: 1px solid var(--c-gray);}
 .title.f20{font-size: 20px; font-weight: 400;}
@@ -65,7 +65,7 @@ select {min-width:150px; height: 40px; padding:5px 16px; border:1px solid var(--
 .req::before{content:"*"; display: inline-block; padding-right: 2px; font-size: 12spx; font-weight: bold; color: var(--c-red);}
 .req::after{content: "필수"; display: block; position: absolute; top: -9999px;}
 /*button*/
-input[type="text"]{width:300px; height: 36px; padding:0 14px; border:1px solid var(--c-gray); color: var(--c-bold-gray);}
+input[type="text"],input[type="password"]{width:300px; height: 36px; padding:0 14px; border:1px solid var(--c-gray); color: var(--c-bold-gray); box-sizing: border-box;}
 input[type=checkbox], input[type=radio] {-webkit-appearance: none;-moz-appearance: none;appearance: none; margin:0; padding: 0; margin-top: -2px; position: absolute; top:50%; transform: translateY(-50%);}
 .check_form{position: relative;}
 .checkbox{width:24px; height: 24px;}
@@ -86,7 +86,7 @@ button:hover,a[class*='btn']:hover{box-shadow: 1px 1px 8px 1px #d6d6d6;}
 .btn_square.disable{background-color: var(--c-gray); color: #fff;} 
 .btn_square.orange{background-color: var(--c-orange);}
 
-.btn_close{position: absolute; top: 10px; right: 10px; width: var(--btn-size,30px); height:var(--btn-size,30px); display: block; text-indent: -9999px;}
+.btn_close{position: absolute; top: 10px; right: 10px; width: var(--btn-size,30px); height:var(--btn-size,30px); display: block; text-indent: -9999px; z-index: 50;}
 .btn_close::before,.btn_close::after{content: ""; display: block; height: 2px; background-color: var(--btn-color,#000); transform:rotate(45deg);}
 .btn_close::after{margin-top: -2px; transform:rotate(-45deg)}
 .btn_reset{position: relative; width: 100px; line-height: 40px; padding: 0 14px 0 28px; border:1px solid var(--c-gray); border-radius: 5px; background-color: #fff;}
@@ -101,11 +101,13 @@ button:hover,a[class*='btn']:hover{box-shadow: 1px 1px 8px 1px #d6d6d6;}
 .flex_both_ends{display: flex; justify-content: space-between; align-items: center;}
 .flex_both_ends.title_area{margin-bottom: 20px;}
 .flex_both_ends.title_area .title{margin-bottom: 0;}
-.flex_end{display: flex; justify-content: flex-end;}
+.flex_end{display: flex; justify-content: flex-end; align-items: center;}
 .flex.gap20{gap:20px !important}
 .flex.gap100{gap:100px !important}
 /*width, margin  padding*/
 .pd0{padding:0 !important;}
+.mt0{margin-top:0 !important;}
+.mt20{margin-top:20 !important;}
 .ml20{margin-left: 20px !important;}
 .w150{width:150px !important}
 .w200{width: 200px !important;}
@@ -153,7 +155,7 @@ button:hover,a[class*='btn']:hover{box-shadow: 1px 1px 8px 1px #d6d6d6;}
 .tab_container .tab_btn button.on{color: var(--c-red); font-weight: 500;}
 .tab_container .tab_btn button:first-of-type{border-left:1px solid var(--c-gray);}
 /*테이블*/
-.table_style{margin-bottom:40px;}
+.table_style{margin-bottom:10px;}
 .table_style table{width: 100%; border: 1px solid var(--c-gray);}
 .table_style.pd20 table td{padding: 20px;}
 .table_style table :is(th,td){vertical-align: middle;  border-left: 1px solid var(--c-gray); border-bottom: 1px solid var(--c-gray);}

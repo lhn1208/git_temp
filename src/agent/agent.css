@@ -32,6 +32,7 @@
 .agent .req_chk_wrap .req_tb th.bold{font-size: var(--font-mid-tit); font-weight: 500;} 
 .agent .req_chk_wrap .req_tb .state{border:none;}
 .agent .req_chk_wrap .req_tb .state button{margin-left: 14px;}
+.agent .req_chk_wrap .bottom_chk{position: relative; margin-top: -20px;}
 /*일정관리*/
 .agent .sch_manage .table .title{display: flex;}
 .agent .sch_manage .table a{display: block; max-width: 720px; text-overflow:ellipsis; white-space: nowrap; overflow: hidden; font-size: var(--font-cont-txt); box-sizing: border-box;}

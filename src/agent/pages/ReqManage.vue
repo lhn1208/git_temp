@@ -51,7 +51,7 @@ const navigate = (link) => {
               </tbody>
           </table>
         </div>
-        <div class="grp">
+        <div class="bottom_chk">
           <CheckBox optId="check1" labelTxt="위의 안내사항에 동의합니다." />
         </div>
       </section>

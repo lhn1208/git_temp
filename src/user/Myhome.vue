@@ -30,7 +30,7 @@ const navigate = (link) => {
             text="10억원 지급 오픈 이벤트가 1달간(18.01.28까지) 진행됩니다.<br>포인트는 부동산 중개수수료를 납부하실 수 있습니다."
             btnText="이벤트 안내/참여"
         />-->
-        <section class="pd0">
+        <section class="mt20">
             <div class="box_wrap col manage_box">
                 <div class="box pd0">
                     <div class="cont">
