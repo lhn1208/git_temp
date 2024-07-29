@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        table{width:100%; border-collapse: collapse; border-spacing: 0; box-sizing: border-box;}
+        table caption{font-size:0; line-height:0; visibility:hidden;}
+        table :is(th,td){min-height:40px; padding:10px; border:1px solid #e1e1e1;}
+
+        table+table{margin-top: 40px;}
+        .table_style2 td{text-align: center;}
+
+        @media(max-width: 1024px){
+            /*.wrapper{max-width:1200px; width:100%; margin:0 auto;}*/
+            table{width: 100%;}
+            .table_style1 {--width:120px;}
+            .table_style1 th{position: absolute; left: -9999px;}
+            .table_style1,.table_style1 :is(tbody,tr,th,td){display: block; width: 100%;}
+            .table_style1 td{position: relative; padding-left: calc(var(--width) + 10px);} 
+            .table_style1 td:before{content: attr(data-title); width: var(--width); padding:10px 0; display: flex; align-items: center; justify-content: center; background-color: #f1f1f1; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}          
+        
+            /*th col*/
+            .table_style2 {--width:120px;}
+            .table_style2 th{position: absolute; left: -9999px;}
+            .table_style2,.table_style2 :is(tbody,tr,th,td){display: block; width: 100%;}
+            .table_style2 td{position: relative; padding-left: calc(var(--width) + 10px); text-align: left;} 
+            .table_style2 td:before{content: attr(data-title); width: var(--width); padding:10px 0; display: flex; align-items: center; justify-content: center; background-color: #f1f1f1; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}          
+            
+            .table_style3, .table_style3 :is(tbody,tr,th,td){display: block; width: 100%;}
+            .table_style3 th{background: #eee; padding:10px 0; box-sizing: border-box;}
+             
+        }
+        /* 미디어 쿼리 - 모바일 화면일 때 */
+        @media (max-width: 600px) {
+            .table_style1 col:nth-child(1) {
+                width: 20%;
+            }
+            .table_style1 col:nth-child(2) {
+                width: 50%;
+            }
+            .table_style1 col:nth-child(3) {
+                width: 20%;
+            }
+            .table_style1 col:nth-child(4) {
+                width: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <table class="table_style1">
+            <caption>특가상품 리스트</caption>
+            <colgroup>
+                <col style="width:14%">
+                <col style="width:36%">
+                <col style="width:14%">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">청명</th>
+                    <td data-title="청명">서울중앙지방검찰청</td>
+                    <th scope="row">사건번호</th>
+                    <td data-title="사건번호">2023형제 8200</td>
+                </tr>
+                <tr>
+                    <th scope="row" >청명</th>
+                    <td data-title="청명">서울중앙지방검찰청</td>
+                    <th scope="row">사건번호</th>
+                    <td data-title="사건번호">2023형제 8200</td>
+                </tr>
+                <tr>
+                    <th scope="row" >청명</th>
+                    <td data-title="청명">서울중앙지방검찰청</td>
+                    <th scope="row">사건번호</th>
+                    <td data-title="사건번호">2023형제 8200</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table_style2">
+            <caption>특가상품 리스트</caption>
+            <colgroup>
+                <col style="width:25%">
+                <col style="width:25%">
+                <col style="width:25%">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">제목1</th>
+                    <th scope="col">제목2</th>
+                    <th scope="col">제목3</th>
+                    <th scope="col">제목4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="제목1">내용1-1</td>
+                    <td data-title="제목2">내용1-2</td>
+                    <td data-title="제목3">내용1-3</td>
+                    <td data-title="제목4">내용1-4</td>
+                </tr>
+                <tr>
+                    <td data-title="제목1">내용2-1</td>
+                    <td data-title="제목2">내용2-2</td>
+                    <td data-title="제목3">내용2-3</td>
+                    <td data-title="제목4">내용2-4</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table_style3">
+            <caption>특가상품 리스트</caption>
+            <colgroup>
+                <col style="width:14%">
+                <col style="width:36%">
+                <col style="width:14%">
+                <col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">청명</th>
+                    <td data-title="청명">서울중앙지방검찰청</td>
+                    <th scope="row">사건번호</th>
+                    <td data-title="사건번호">2023형제 8200</td>
+                </tr>
+                <tr>
+                    <th scope="row" >청명</th>
+                    <td data-title="청명">서울중앙지방검찰청</td>
+                    <th scope="row">사건번호</th>
+                    <td data-title="사건번호">2023형제 8200</td>
+                </tr>
+                <tr>
+                    <th scope="row" >청명</th>
+                    <td data-title="청명">서울중앙지방검찰청</td>
+                    <th scope="row">사건번호</th>
+                    <td data-title="사건번호">2023형제 8200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        
+</body>
+</html>
